@@ -1,0 +1,18 @@
+{
+    "Panchami": {
+        "Kolkata": ["Kumartuli Park", "Bagbazar Sarbojonin", "Mohammad Ali Park"],
+        "Howrah": ["Howrah AC Market", "Sarat Sadan", "Santragachi Kadamtala"]
+    },
+    "Shosthi": {
+        "Kolkata": ["College Square", "Md. Ali Park", "Santosh Mitra Square"],
+        "Howrah": ["Belur Math", "Ramkrishna Ashram", "Golabari Pandal"]
+    },
+    "Saptami": {
+        "Kolkata": ["Badamtala Ashar Sangha", "Ekdalia Evergreen", "Deshapriya Park"],
+        "Howrah": ["Gouripur Pandal", "Bally AC Market", "Salkia"]
+    },
+    "Ashtami": {
+        "Kolkata": ["Bosepukur Sitala Mandir", "Suruchi Sangha", "Mudiali Club"],
+        "Howrah": ["Shibpur Baganbari", "Shibpur Rajbari", "Liluah"]
+    }
+}
