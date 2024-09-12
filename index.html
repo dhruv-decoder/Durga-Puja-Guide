@@ -1,3 +1,161 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Puja Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>.countdown-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .box {
+        background-color: #f77f00;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .box:hover {
+        transform: scale(1.1);
+    }
+    
+    .time {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    
+    span {
+        font-size: 16px;
+    }
+    
+    .rotating-diya {
+        width: 150px;
+        margin-top: 50px;
+        animation: rotateDiya 3s infinite linear;
+    }
+    
+    @keyframes rotateDiya {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #countdown {
+            flex-direction: column;
+        }
+        .box {
+            width: 80px;
+            padding: 15px;
+        }
+        .time {
+            font-size: 36px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Durga Puja Guide</h1>
+        
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="top_pandals.html">Top Pandals</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to the Durga Puja Guide</h2>
+            <p>
+                Durga Puja is the biggest festival celebrated with grandeur and enthusiasm in West Bengal. 
+                Explore the rich traditions, visit iconic pandals, and immerse yourself in the festive spirit. 
+                Whether you're a local or a visitor, this guide will help you navigate through the best pandals 
+                and plan your itinerary with ease.
+            </p>
+        </div>
+        
+        
+        <div class="countdown-container">
+            <h2>Countdown to Durga Puja</h2>
+            <div id="countdown">
+                <div class="box">
+                    <div id="days" class="time">00</div>
+                    <span>Days</span>
+                </div>
+                <div class="box">
+                    <div id="hours" class="time">00</div>
+                    <span>Hours</span>
+                </div>
+                <div class="box">
+                    <div id="minutes" class="time">00</div>
+                    <span>Minutes</span>
+                </div>
+                <div class="box">
+                    <div id="seconds" class="time">00</div>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="scripts.js" defer></script>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        
+        const targetDate = new Date("Oct 10, 2024 00:00:00").getTime();
+    
+       
+        const countdownInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const timeRemaining = targetDate - now;
+    
+            
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    
+            
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+    
+            
+            if (timeRemaining < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "Durga Puja has started!";
+            }
+        }, 1000);
+    });
+    </script>
+</body>
+</html> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,7 +269,7 @@
             <a href="index.html">Home</a>
             <a href="top_pandals.html">Top Pandals</a>
             <a href="itinerary.html">Itinerary</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="quiz_puja.html">Quiz</a>
         </nav>
     </header>
 
@@ -196,7 +354,7 @@
             <!-- <img src="images/diya.png" class="rotating-diya" alt="Rotating Diya"> -->
         </div>
     </div>
-
+    
     <script src="scripts.js" defer></script>
     <script>document.addEventListener('DOMContentLoaded', () => {
         
